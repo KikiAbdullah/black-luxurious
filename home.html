@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-640x920.png" />
+        <title>niobe - mobile template</title>
+        <link rel="stylesheet" href="css/swiper.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&display=swap" rel="stylesheet" />
+    </head>
+
+    <body id="mobile_wrap">
+        <div class="panel-overlay"></div>
+
+        <!-- Bottom panel -->
+        <div id="panel-bottom"></div>
+
+        <div class="views">
+            <div class="view view-main">
+                <div class="pages">
+                    <div data-page="index" class="page homepage">
+                        <div class="page-content">
+                            <div class="navbar navbar--fixed navbar--fixed-top">
+                                <div class="navbar__col navbar__col--title">
+                                    <a href="index.html">ni<span>o</span>be</a>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Slider -->
+                            <div class="swiper-container introslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-caption">
+                                            <div class="text-center">
+                                                <img src="images/ornament/Lafadz Bismillah (SVG).svg" alt="" style="margin-left: auto;
+                                                    margin-right: auto; display: block;">
+                                            </div>
+                                            <br>
+                                            <h2 data-swiper-parallax="-100%" id="hari" style="text-align: center;">
+                                                0
+                                            </h2>
+                                            <br>
+                                            <h2 data-swiper-parallax="-100%" id="jam" style="text-align: center;">
+                                                0
+                                            </h2>
+                                            <div class="slider-caption__line" data-swiper-parallax="-200%">
+                                            </div>
+                                            <h2 data-swiper-parallax="-100%">
+                                            </h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide" style="background-image: url(images/cover/1.jpg)">
+                                        <div class="slider-caption">
+                                            <div class="slider-caption__line" data-swiper-parallax="-200%">
+                                            </div>
+                                            <h2 data-swiper-parallax="-100%">
+                                                Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat
+                                                (kebesaran Allah).
+                                            </h2>
+                                            <a href="#" class="slider-caption__more" data-swiper-parallax="-60%">(QS. Az
+                                                Zariyat: 49)</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide" style="background-image: url(images/cover/2.jpg)">
+                                        <div class="slider-caption">
+                                            <div class="slider-caption__line" data-swiper-parallax="-200%">
+                                                02
+                                            </div>
+                                            <h2 data-swiper-parallax="-100%">
+                                                I never think of the future – it comes soon enough
+                                            </h2>
+                                            <a href="about.html" class="slider-caption__more"
+                                                data-swiper-parallax="-60%">VIEW MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="background-image: url(images/cover/3.jpg)">
+                                        <div class="slider-caption">
+                                            <div class="slider-caption__line" data-swiper-parallax="-200%">
+                                                03
+                                            </div>
+                                            <h2 data-swiper-parallax="-100%">
+                                                Creativity makes life more fun and more interesting
+                                            </h2>
+                                            <a href="about.html" class="slider-caption__more"
+                                                data-swiper-parallax="-60%">VIEW MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+
+                            <div class="bottom-menu-open">
+                                <div class="bottom-menu-open__left"></div>
+                                <div class="bottom-menu-open__container">
+                                    <div id="bottom-menu-icon" class="bottom-menu-open__icon open-panel"
+                                        data-panel="bottom">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bottom-menu-open__right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-gallery"></div>
+
+        <div id="popup-alamat"></div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.custom.js"></script>
+
+        <script type="text/javascript">
+            function updateTimer() {
+                future = Date.parse("jan 15, 2022 00:00:00");
+                now = new Date();
+                diff = future - now;
+
+                days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                hours = Math.floor(diff / (1000 * 60 * 60));
+                mins = Math.floor(diff / (1000 * 60));
+                secs = Math.floor(diff / 1000);
+
+                d = days;
+                h = hours - days * 24;
+                m = mins - hours * 60;
+                s = secs - mins * 60;
+
+                document.getElementById("hari")
+                    .innerHTML = d + '<br>Hari';
+                document.getElementById("jam")
+                    .innerHTML = h + ':' + m + ':' + s;
+            }
+            setInterval('updateTimer()', 1000);
+        </script>
+
+
+    </body>
+
+</html>
