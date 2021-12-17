@@ -46,8 +46,8 @@ $(document).ready(function () {
   // $("#popup-login").load("popup-login.html");
   // $("#popup-signup").load("popup-signup.html");
   // $("#popup-forgot").load("popup-forgot-password.html");
-  // $("#popup-social").load("popup-social-share.html");
-  $("#popup-gallery").load("popup-gallery.html");
+  $("#popup-pengantin").load("popup-pengantin.html");
+  $("#popup-tanggal").load("popup-tanggal.html");
   $("#popup-alamat").load("popup-alamat.html");
 
 
