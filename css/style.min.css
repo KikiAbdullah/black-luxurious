@@ -143,6 +143,7 @@ html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 body {
   font-family: antic;
@@ -3438,6 +3439,8 @@ ul.responsive_table li:first-child {
   }
 }
 
+/* ornamernt */
+
 .ornament-top-left {
   position: absolute;
   top: 15px;
@@ -3474,6 +3477,15 @@ ul.responsive_table li:first-child {
   transform: translate(-50%, -50%);
 }
 
+/* Cover */
+.wedding-img {
+  position: absolute;
+  width: 50%;
+  top: -150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* nama pengantin */
 
 .nama-pengantin {
@@ -3488,8 +3500,23 @@ ul.responsive_table li:first-child {
 
 .resepsi-img {
   position: absolute;
-  width: 70%;
-  top: 50%;
+  width: 80%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.akad-img {
+  position: absolute;
+  width: 80%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.save-date {
+  position: absolute;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
