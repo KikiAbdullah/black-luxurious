@@ -3479,11 +3479,16 @@ ul.responsive_table li:first-child {
 .wedding-img {
   position: absolute;
   width: 50%;
-  top: -150%;
+  top: -170%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.text-cover h5 {
+  text-align: center;
+}
+.text-cover h3 {
+  text-align: center;
+}
 /* nama pengantin */
 
 .nama-pengantin {
