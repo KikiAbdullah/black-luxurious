@@ -33,6 +33,23 @@
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script type="text/javascript">
+
+      function ready(callback) {
+        // in case the document is already rendered
+        if (document.readyState != 'loading') callback();
+        // modern browsers
+        else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+        // IE <= 8
+        else document.attachEvent('onreadystatechange', function () {
+          if (document.readyState == 'complete') callback();
+        });
+      }
+
+      ready(function () {
+        sound.play();
+        console.log('audio play');
+      });
+
       var sound = new Howl({
         src: ['https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3'],
         html5: true,
@@ -42,9 +59,7 @@
           console.log('Finished!');
         }
       });
-      $(document).ready(function () {
-        sound.play();
-      });
+
 
     </script>
   </head>
