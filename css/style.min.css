@@ -3479,7 +3479,7 @@ ul.responsive_table li:first-child {
 .wedding-img {
   position: absolute;
   width: 50%;
-  top: -170%;
+  top: -100%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
