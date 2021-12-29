@@ -1131,13 +1131,13 @@ body.panel-closing .views {
 }
 .toolbar-icon a img {
   display: block;
-  max-width: 70%;
+  max-height: 42px;
   margin: 0 auto 0 auto;
   text-align: center;
 }
 .toolbar-icon a span {
-  color: #fff;
-  font-weight: 400;
+  color: black;
+  font-weight: 800;
   font-size: 14px;
 }
 .slider_trans {
@@ -1157,7 +1157,7 @@ body.panel-closing .views {
   margin: 0;
 }
 .introslider .slider-caption {
-  bottom: 40%;
+  bottom: 54%;
 }
 .slider-caption__line {
   color: #fff;
@@ -1787,7 +1787,7 @@ ul.social_share li a {
 .close-popup--x {
   position: fixed;
   z-index: 99999;
-  top: 40px;
+  top: 60px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30px;
@@ -3303,7 +3303,7 @@ ul.responsive_table li:first-child {
     bottom: 13%;
   }
   .introslider .slider-caption {
-    bottom: 30%;
+    bottom: 54%;
   }
   .main_nav_underline ul li img {
     max-width: 8%;
@@ -3490,36 +3490,106 @@ ul.responsive_table li:first-child {
   text-align: center;
 }
 /* nama pengantin */
+.logo-pengantin {
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+.text-pengantin-top {
+  position: relative;
+  text-align: center;
+  top: 46px;
+}
+
+.text-pengantin-bottom {
+  position: relative;
+  text-align: center;
+  top: 46px;
+}
 
 .nama-pengantin {
-  position: absolute;
-  width: 70%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* popup-alamat */
+.logo-alamat {
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.text-alamat {
+  position: relative;
+  text-align: center;
+  top: 46px;
+}
+
+.alamat-iframe {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 350px;
 }
 
 /* popup-tanggal */
+.logo-tanggal {
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
 
 .resepsi-img {
-  position: absolute;
-  width: 60%;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .akad-img {
-  position: absolute;
-  width: 60%;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .save-date {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+  color: black;
+}
+
+/* popup-ucapan */
+.logo-ucapan {
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+/* HOME 1 */
+.img-bismillah {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }

@@ -49,7 +49,7 @@ $(document).ready(function () {
   $("#popup-pengantin").load("popup-pengantin.html");
   $("#popup-tanggal").load("popup-tanggal.html");
   $("#popup-alamat").load("popup-alamat.html");
-
+  $("#popup-ucapan").load("popup-ucapan.html");
 
   $("#header-page").load("header-page.html");
 

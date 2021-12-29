@@ -1,66 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui"
+    />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-640x920.png" />
+    <link
+      rel="apple-touch-startup-image"
+      href="images/apple-touch-startup-image-640x920.png"
+    />
     <title>niobe - mobile template</title>
     <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
       integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.core.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.core.min.js"
       integrity="sha512-+wqa4/aOL4vwhL637A4p+6epqhUHDqpEfYJa1+PlzlMf908CSOb3xtIeKwZWh5Q0Q/R2nYUKxH4vvcQg+k8KKQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"
       integrity="sha512-dMiBqqEV5i3KqpAdsgQSSZ72DnNib7otY0X+b/Tnn1EmLym1dxuZ19csdZqBnfDniKd9bmNtzStQzuMrIa5Ngw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.spatial.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.spatial.min.js"
       integrity="sha512-bJ12cKgyPVNoCnZ6R7mGKMzsEpu2ROiWGyImoviSj/zE3jHS+xv5EiTIHM7HPjIk2/mD4TZMvqLpDiMgyAwdwg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script type="text/javascript">
-
       function ready(callback) {
         // in case the document is already rendered
-        if (document.readyState != 'loading') callback();
+        if (document.readyState != "loading") callback();
         // modern browsers
-        else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+        else if (document.addEventListener)
+          document.addEventListener("DOMContentLoaded", callback);
         // IE <= 8
-        else document.attachEvent('onreadystatechange', function () {
-          if (document.readyState == 'complete') callback();
-        });
+        else
+          document.attachEvent("onreadystatechange", function () {
+            if (document.readyState == "complete") callback();
+          });
       }
 
       ready(function () {
         sound.play();
-        console.log('audio play');
+        console.log("audio play");
       });
 
       var sound = new Howl({
-        src: ['https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3'],
+        src: [
+          "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3",
+        ],
         html5: true,
         autoplay: true,
         loop: true,
         onend: function () {
-          console.log('Finished!');
-        }
+          console.log("Finished!");
+        },
       });
-
-
     </script>
   </head>
 
@@ -75,65 +99,130 @@
         <div class="pages">
           <div data-page="index" class="page homepage">
             <div class="page-content">
-
-              <img src="images/ornament/Left Bottom Corner Ornament (SVG).svg" class="ornament-bottom-left" alt="" />
-              <img src="images/ornament/Right Bottom Corner Ornament (SVG).svg" class="ornament-bottom-right" alt="" />
+              <img
+                src="images/ornament/Left Bottom Corner Ornament (SVG).svg"
+                class="ornament-bottom-left"
+                alt=""
+              />
+              <img
+                src="images/ornament/Right Bottom Corner Ornament (SVG).svg"
+                class="ornament-bottom-right"
+                alt=""
+              />
               <!-- Slider -->
               <div class="swiper-container introslider">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide" style="background-image: url(images/cover/bg.jpg)">
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/cover/0.jpg)"
+                  >
                     <div class="slider-caption">
-                      <div class="text-center">
-                        <img src="images/ornament/Lafadz Bismillah (SVG).svg" alt="" style="
-                            margin-left: auto;
-                            margin-right: auto;
-                            display: block;
-                          " />
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img
+                              src="images/ornament/Lafadz Bismillah (SVG).svg"
+                              alt=""
+                              class="img-bismillah"
+                            />
+                          </div>
+                          <div class="col-md-12">
+                            <h2
+                              data-swiper-parallax="-100%"
+                              id="hari"
+                              style="text-align: center; font-size: 50pt"
+                            >
+                              0
+                            </h2>
+                            <h2
+                              data-swiper-parallax="-100%"
+                              id="jam"
+                              style="text-align: center; font-size: 30pt"
+                            >
+                              0
+                            </h2>
+                          </div>
+                          <div class="col-md-12">
+                            <h2
+                              data-swiper-parallax="-100%"
+                              style="
+                                text-align: center;
+                                font-size: 20pt;
+                                color: #ebca6a;
+                              "
+                            >
+                              Until Our Wedding
+                            </h2>
+                          </div>
+                        </div>
                       </div>
-                      <br />
-                      <h2 data-swiper-parallax="-100%" id="hari" style="text-align: center">
-                        0
-                      </h2>
-                      <br />
-                      <h2 data-swiper-parallax="-100%" id="jam" style="text-align: center">
-                        0
-                      </h2>
-                      <div class="slider-caption__line" data-swiper-parallax="-200%"></div>
-                      <h2 data-swiper-parallax="-100%"></h2>
                     </div>
                   </div>
 
-                  <div class="swiper-slide" style="background-image: url(images/cover/1.jpg)">
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/cover/1.jpg)"
+                  >
                     <div class="slider-caption">
-                      <div class="slider-caption__line" data-swiper-parallax="-200%"></div>
+                      <div
+                        class="slider-caption__line"
+                        data-swiper-parallax="-200%"
+                      ></div>
                       <h2 data-swiper-parallax="-100%">
                         Dan segala sesuatu Kami ciptakan berpasang-pasangan agar
                         kamu mengingat (kebesaran Allah).
                       </h2>
-                      <a href="#" class="slider-caption__more" data-swiper-parallax="-60%">(QS. Az Zariyat: 49)</a>
+                      <a
+                        href="#"
+                        class="slider-caption__more"
+                        data-swiper-parallax="-60%"
+                        >(QS. Az Zariyat: 49)</a
+                      >
                     </div>
                   </div>
 
-                  <div class="swiper-slide" style="background-image: url(images/cover/2.jpg)">
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/cover/2.jpg)"
+                  >
                     <div class="slider-caption">
-                      <div class="slider-caption__line" data-swiper-parallax="-200%">
+                      <div
+                        class="slider-caption__line"
+                        data-swiper-parallax="-200%"
+                      >
                         02
                       </div>
                       <h2 data-swiper-parallax="-100%">
                         I never think of the future – it comes soon enough
                       </h2>
-                      <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">VIEW MORE</a>
+                      <a
+                        href="about.html"
+                        class="slider-caption__more"
+                        data-swiper-parallax="-60%"
+                        >VIEW MORE</a
+                      >
                     </div>
                   </div>
-                  <div class="swiper-slide" style="background-image: url(images/cover/3.jpg)">
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/cover/3.jpg)"
+                  >
                     <div class="slider-caption">
-                      <div class="slider-caption__line" data-swiper-parallax="-200%">
+                      <div
+                        class="slider-caption__line"
+                        data-swiper-parallax="-200%"
+                      >
                         03
                       </div>
                       <h2 data-swiper-parallax="-100%">
                         Creativity makes life more fun and more interesting
                       </h2>
-                      <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">VIEW MORE</a>
+                      <a
+                        href="about.html"
+                        class="slider-caption__more"
+                        data-swiper-parallax="-60%"
+                        >VIEW MORE</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -145,7 +234,11 @@
               <div class="bottom-menu-open">
                 <div class="bottom-menu-open__left"></div>
                 <div class="bottom-menu-open__container">
-                  <div id="bottom-menu-icon" class="bottom-menu-open__icon open-panel" data-panel="bottom">
+                  <div
+                    id="bottom-menu-icon"
+                    class="bottom-menu-open__icon open-panel"
+                    data-panel="bottom"
+                  >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -166,12 +259,9 @@
 
     <div id="popup-alamat"></div>
 
-
-
+    <div id="popup-ucapan"></div>
 
     <script type="text/javascript">
-
-
       function updateTimer() {
         future = Date.parse("jan 15, 2022 00:00:00");
         now = new Date();
@@ -187,11 +277,11 @@
         m = mins - hours * 60;
         s = secs - mins * 60;
 
-        document.getElementById("hari").innerHTML = d + "<br>Hari";
-        document.getElementById("jam").innerHTML = h + ":" + m + ":" + s;
+        document.getElementById("hari").innerHTML = d + " Days";
+        document.getElementById("jam").innerHTML =
+          h + ":" + m + ":" + s + " Hours";
       }
       setInterval("updateTimer()", 1000);
     </script>
   </body>
-
 </html>
