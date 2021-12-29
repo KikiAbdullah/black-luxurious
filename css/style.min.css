@@ -3476,19 +3476,36 @@ ul.responsive_table li:first-child {
 }
 
 /* Cover */
-.wedding-img {
-  position: absolute;
-  width: 50%;
-  top: -100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.cover {
+  position: relative;
+  top: 250px;
 }
+
+.wedding-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 60%;
+}
+.text-cover {
+}
+
 .text-cover h5 {
   text-align: center;
 }
 .text-cover h3 {
   text-align: center;
 }
+
+.cover-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  width: 60%;
+}
+
 /* nama pengantin */
 .logo-pengantin {
   display: block;
