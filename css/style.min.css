@@ -950,12 +950,13 @@ body.panel-closing .views {
   );
 }
 .bottom-menu-open__container {
-  width: 50px;
-  height: 27px;
-  padding-top: 18px;
+  width: 60px;
+  height: 35px;
+  padding-top: 12px;
   background-color: #ebca6a;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  padding-bottom: 16px;
 }
 .bottom-menu-open__right {
   width: 25px;
@@ -967,10 +968,12 @@ body.panel-closing .views {
   );
 }
 .bottom-menu-open__icon {
-  width: 26px;
-  height: 20px;
+  width: 38px;
+  height: 31px;
   position: relative;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
   -o-transform: rotate(0);
@@ -984,9 +987,12 @@ body.panel-closing .views {
 .bottom-menu-open__icon span {
   display: block;
   position: absolute;
-  height: 1px;
+  height: 2px;
   width: 100%;
-  background: #fff;
+  background: black;
+  color: black;
+  text-align: center;
+  font-weight: 900;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0);
@@ -1030,6 +1036,11 @@ body.panel-closing .views {
   width: 0%;
   left: 50%;
 }
+
+.bottom-menu-open__icon img {
+  width: 100%;
+}
+
 body.panel-closing .views {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -3567,6 +3578,12 @@ ul.responsive_table li:first-child {
   width: 15%;
 }
 
+.text-tanggal {
+  position: relative;
+  text-align: center;
+  top: 46px;
+}
+
 .resepsi-img {
   display: block;
   margin-top: 10%;
@@ -3600,6 +3617,12 @@ ul.responsive_table li:first-child {
   margin-left: auto;
   margin-right: auto;
   width: 15%;
+}
+
+.text-ucapan {
+  position: relative;
+  text-align: center;
+  top: 46px;
 }
 
 /* HOME 1 */
