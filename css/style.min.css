@@ -927,7 +927,7 @@ body.panel-closing .views {
   -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
   height: 100%;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 .bottom-menu-open {
@@ -1067,7 +1067,7 @@ body.panel-closing .views {
   -webkit-overflow-scrolling: touch;
 }
 #pages_maincontent.pages_maincontent--conversation {
-  bottom: 60px;
+  bottom: 146px;
 }
 #pages_maincontent p {
   padding: 0 0 15px 0;
@@ -1583,14 +1583,14 @@ ul.features_list_detailed li .feat_small_details h4 {
 }
 .conversation-submit {
   position: fixed;
-  bottom: 10px;
-  left: 4%;
+  bottom: 94px;
+  left: 8%;
   z-index: 9999;
-  width: 92%;
+  width: 83%;
   background-color: #fff;
   -moz-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 8px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 20px 2px rgb(0 0 0 / 10%);
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -3265,7 +3265,7 @@ ul.responsive_table li:first-child {
     margin-left: 15px;
   }
   #pages_maincontent {
-    top: 60px;
+    top: 195px;
   }
   blockquote {
     font-size: 16px;
@@ -3489,17 +3489,23 @@ ul.responsive_table li:first-child {
 /* Cover */
 .cover {
   position: relative;
-  top: 250px;
+  bottom: -317px;
+}
+
+.logo-twb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  width: 60%;
 }
 
 .wedding-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 55px;
   width: 60%;
-}
-.text-cover {
 }
 
 .text-cover h5 {
@@ -3513,7 +3519,7 @@ ul.responsive_table li:first-child {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 64px;
+  margin-top: 23px;
   width: 60%;
 }
 
