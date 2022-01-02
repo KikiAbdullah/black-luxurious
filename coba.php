@@ -25,105 +25,84 @@
     <!-- Bottom panel -->
     <div id="panel-bottom"></div>
 
+
     <div class="views">
 
         <div class="view view-main">
 
+
+
             <div class="pages">
-                <div data-page="conversation" class="page page--conversation">
+
+                <div data-page="index" class="page homepage">
                     <div class="page-content">
 
-                        <div class="navbar navbar--fixed navbar--fixed-top navbar--page">
-
-                            <div class="navbar__col navbar__col--icon navbar__col--icon-left">
-                                <a href="chat.html"><img src="images/icons/orange/back.png" alt="" title="" /></a>
+                        <div class="navbar navbar--fixed navbar--fixed-top">
+                            <div class="navbar__col navbar__col--title">
+                                <a href="index.html">ni<span>o</span>be</a>
                             </div>
-                            <div class="navbar__col navbar__col--title navbar__col--title-sm navbar__col--title-centered">
-                                <a href="chat.html">Alexandra Doe</a>
-                                <span class="navbar__col-subtitle">Last online: 10 min ago</span>
-                            </div>
-                            <div class="navbar__col navbar__col--icon navbar__col--icon-right">
-                                <a href="tel:12345678"><img src="images/icons/orange/phone.png" alt="" title="" /></a>
+                            <div class="navbar__col navbar__col--icon navbar__col--icon-menu">
+                                <a href="#" data-panel="left" class="open-panel"><span></span><span></span><span></span><span></span></a>
                             </div>
                         </div>
 
-                        <div id="pages_maincontent" class="pages_maincontent--conversation">
+                        <!-- Slider -->
+                        <div class="swiper-container introslider">
+                            <div class="swiper-wrapper">
 
+                                <div class="swiper-slide" style="background-image:url(images/slide1.jpg);">
 
-                            <div class="page_single layout_fullwidth_padding">
+                                    <div class="slider-caption">
+                                        <div class="slider-caption__line" data-swiper-parallax="-200%">01</div>
+                                        <h2 data-swiper-parallax="-100%">The secret to creativity is knowing how to hide your sources</h2>
+                                        <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">VIEW MORE</a>
+                                    </div>
+                                </div>
 
+                                <div class="swiper-slide" style="background-image:url(images/slide2.jpg);">
 
-                                <ul class="conversation">
+                                    <div class="slider-caption">
+                                        <div class="slider-caption__line" data-swiper-parallax="-200%">02</div>
+                                        <h2 data-swiper-parallax="-100%">I never think of the future – it comes soon enough</h2>
+                                        <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">VIEW MORE</a>
+                                    </div>
 
-                                    <li class="conversation__row conversation__row--received conversation__row--undread">
-                                        <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
+                                </div>
+                                <div class="swiper-slide" style="background-image:url(images/slide3.jpg);">
 
-                                        <div class="conversation__content">
-                                            <p>Hi there, just wanted to let you know about our vacation</p>
-                                            <span class="conversation__time">10:21 am</span>
-                                        </div>
+                                    <div class="slider-caption">
+                                        <div class="slider-caption__line" data-swiper-parallax="-200%">03</div>
+                                        <h2 data-swiper-parallax="-100%">Creativity makes life more fun and more interesting</h2>
+                                        <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">VIEW MORE</a>
+                                    </div>
 
-                                    </li>
-                                    <li class="conversation__row conversation__row--sent">
-                                        <div class="conversation__content">
-                                            <p>Hi Alexandra!</p>
-                                            <span class="conversation__time">8:32 am</span>
-                                        </div>
-                                        <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
-                                    </li>
-                                    <li class="conversation__row conversation__row--sent">
-                                        <div class="conversation__content">
-                                            <p>Let's travel to Paris this summer</p>
-                                            <span class="conversation__time">8:20 am</span>
-                                        </div>
-                                        <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
-                                    </li>
-                                    <li class="conversation__row conversation__row--received">
-                                        <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
-
-                                        <div class="conversation__content">
-                                            <p>Sure let's make a plan</p>
-                                            <span class="conversation__time">7:21 am</span>
-                                        </div>
-
-                                    </li>
-                                    <li class="conversation__row conversation__row--received">
-                                        <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
-
-                                        <div class="conversation__content">
-                                            <p>I was offline for a period</p>
-                                            <span class="conversation__time">7:20 am</span>
-                                        </div>
-
-                                    </li>
-                                    <li class="conversation__row conversation__row--sent">
-                                        <div class="conversation__content">
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-                                            <span class="conversation__time">7:00 am</span>
-                                        </div>
-                                        <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
-                                    </li>
-                                    <li class="conversation__row conversation__row--received">
-                                        <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
-
-                                        <div class="conversation__content">
-                                            <p>Checkout this ofer <a href="chat.html">Best travel guide to Paris</a></p>
-                                            <span class="conversation__time">7:21 am</span>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                                <div class="conversation-submit">
-                                    <form class="conversation-submit__form" action="">
-                                        <textarea type="textarea" class="conversation-submit__textarea" id="" name="" placeholder="Type your message..."></textarea>
-                                        <a href="#" class="conversation-submit__send"><img src="images/icons/orange/send.png" alt="" title="" /></a>
-                                    </form>
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+
+
+                        <div class="bottom-menu-open">
+                            <div class="bottom-menu-open__left"></div>
+                            <div class="bottom-menu-open__container">
+                                <div id="bottom-menu-icon" class="bottom-menu-open__icon open-panel" data-panel="bottom">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bottom-menu-open__right"></div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 
