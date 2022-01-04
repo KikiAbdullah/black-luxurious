@@ -1,127 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="popup popup-ucapan">
+    <div class="popup-content">
+        <div id="div-load">
+            <img id="load-ucapan" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif" style="display:none;" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/icons/Ucapan_icon_gold.png" class="logo-ucapan" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-640x920.png">
-    <title>niobe - mobile template</title>
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&display=swap" rel="stylesheet">
-</head>
-
-<body id="mobile_wrap">
-
-    <div class="panel-overlay"></div>
-
-    <!-- Left panel -->
-    <div id="panel-left"></div>
-    <!-- Right panel -->
-    <div id="panel-right"></div>
-    <!-- Bottom panel -->
-    <div id="panel-bottom"></div>
-
-
-    <div class="views">
-
-        <div class="view view-main">
-
-
-
-            <div class="pages">
-
-                <div data-page="index" class="page homepage">
-                    <div class="page-content">
-
-                        <div class="navbar navbar--fixed navbar--fixed-top">
-                            <div class="navbar__col navbar__col--title">
-                                <a href="index.html">ni<span>o</span>be</a>
-                            </div>
-                            <div class="navbar__col navbar__col--icon navbar__col--icon-menu">
-                                <a href="#" data-panel="left" class="open-panel"><span></span><span></span><span></span><span></span></a>
-                            </div>
-                        </div>
-
-                        <!-- Slider -->
-                        <div class="swiper-container introslider">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide" style="background-image:url(images/slide1.jpg);">
-
-                                    <div class="slider-caption">
-                                        <div class="slider-caption__line" data-swiper-parallax="-200%">01</div>
-                                        <h2 data-swiper-parallax="-100%">The secret to creativity is knowing how to hide your sources</h2>
-                                        <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">VIEW MORE</a>
+                    <p class="text-ucapan">Ucapan dan Do'a</p>
+                </div>
+                <div class="col-md-12">
+                    <div id="pages_maincontent" class="pages_maincontent--conversation">
+                        <div class="page_single layout_fullwidth_padding">
+                            <ul class="conversation">
+                                <li class="conversation__row conversation__row--received conversation__row--undread">
+                                    <div class="conversation__content">
+                                        <p>
+                                            Hi there, just wanted to let you know about our vacation
+                                        </p>
+                                        <span class="conversation__time">10:21 am</span>
                                     </div>
-                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="contactform">
+                        <form id="form_rsvp" method="post" action="">
+                            <div class="form_row">
+                                <label>Nama :</label>
+                                <input type="text" name="nama" value="" class="form_input" required />
+                            </div>
 
-                                <div class="swiper-slide" style="background-image:url(images/slide2.jpg);">
+                            <div class="form_row">
+                                <label>Kehadiran :</label>
+                                <div class="form_row_right">
+                                    <label class="label-radio item-content">
+                                        <!-- Checked by default -->
+                                        <input type="radio" name="kehadiran" value="1" checked="checked" required />
+                                        <div class="item-inner">
+                                            <div class="item-title">Hadir</div>
+                                        </div>
+                                    </label>
 
-                                    <div class="slider-caption">
-                                        <div class="slider-caption__line" data-swiper-parallax="-200%">02</div>
-                                        <h2 data-swiper-parallax="-100%">I never think of the future – it comes soon enough</h2>
-                                        <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">VIEW MORE</a>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide" style="background-image:url(images/slide3.jpg);">
-
-                                    <div class="slider-caption">
-                                        <div class="slider-caption__line" data-swiper-parallax="-200%">03</div>
-                                        <h2 data-swiper-parallax="-100%">Creativity makes life more fun and more interesting</h2>
-                                        <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">VIEW MORE</a>
-                                    </div>
-
+                                    <label class="label-radio item-content">
+                                        <!-- Checked by default -->
+                                        <input type="radio" name="kehadiran" value="0" required />
+                                        <div class="item-inner">
+                                            <div class="item-title">Tidak Hadir</div>
+                                        </div>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
 
-
-
-                        <div class="bottom-menu-open">
-                            <div class="bottom-menu-open__left"></div>
-                            <div class="bottom-menu-open__container">
-                                <div id="bottom-menu-icon" class="bottom-menu-open__icon open-panel" data-panel="bottom">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                            <div class="form_row">
+                                <label>Ucapan :</label>
+                                <textarea name="ucapan" class="form_textarea" rows="" cols="" placeholder="Ucapan" required></textarea>
                             </div>
-                            <div class="bottom-menu-open__right"></div>
-                        </div>
+
+                            <input type="submit" name="submit" class="form_submit" id="submit" value="SEND" />
+                        </form>
                     </div>
                 </div>
             </div>
 
-
-
         </div>
+        <a href="#" class="close-popup close-popup--x" data-popup=".popup-ucapan"></a>
     </div>
 
-    <!-- Login Popup -->
-    <div id="popup-login"></div>
+    <img src="images/ornament/Left Top Corner Ornament (SVG).svg" class="ornament-top-left" alt="" />
+    <img src="images/ornament/Right Top Corner Ornament (SVG).svg" class="ornament-top-right" alt="" />
+    <img src="images/ornament/Left Bottom Corner Ornament (SVG).svg" class="ornament-bottom-left" alt="" />
+    <img src="images/ornament/Right Bottom Corner Ornament (SVG).svg" class="ornament-bottom-right" alt="" />
+</div>
 
-    <!-- Register Popup -->
-    <div id="popup-signup"></div>
 
-    <!-- Forgot Password Popup -->
-    <div id="popup-forgot"></div>
 
-    <!-- Social Icons Popup -->
-    <div id="popup-social"></div>
+<script type="text/javascript">
+    $("#form_rsvp").submit(function(ev) {
+        ev.preventDefault();
+        var divIdHtml = $("#load-ucapan").html();
+        $.ajax({
+            type: "POST",
+            url: "https://www.towerinvitee.com/server/rsvp/store/1",
+            data: new FormData(this),
+            dataType: "JSON",
+            processData: false,
+            contentType: false,
+            async: false,
+            cache: false,
+            beforeSend: function() {
+                $("#loading-image").show();
+            },
+            success: function(msg) {
+                $("#" + div_id).html(divIdHtml + msg);
+                $("#loading-image").hide();
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/jquery.custom.js"></script>
-</body>
-
-</html>
+                window.location.href = '';
+            },
+        });
+    });
+</script>
