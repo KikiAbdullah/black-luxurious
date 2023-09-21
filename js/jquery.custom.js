@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   var pageid = $(".page").data("page");
 
-  $("#panel-left").load("panel-left.html", function () {
+  $("#panel-left").load("panel-left.php", function () {
     var swipersubnav = new Swiper(".multinav", {
       direction: "horizontal",
       effect: "slide",
@@ -29,8 +29,8 @@ $(document).ready(function () {
       swipersubnav.slideTo(1);
     });
   });
-  $("#panel-right").load("panel-right.html");
-  $("#panel-bottom").load("panel-bottom.html", function () {
+  $("#panel-right").load("panel-right.php");
+  $("#panel-bottom").load("panel-bottom.php", function () {
     var swipernav = new Swiper(".swiper-toolbar", {
       direction: "horizontal",
       effect: "slide",
@@ -43,12 +43,12 @@ $(document).ready(function () {
     });
   });
 
-  $("#popup-pengantin").load("popup-pengantin.html");
-  $("#popup-tanggal").load("popup-tanggal.html");
-  $("#popup-alamat").load("popup-alamat.html");
-  $("#popup-ucapan").load("popup-ucapan.html");
+  $("#popup-pengantin").load("popup-pengantin.php");
+  $("#popup-tanggal").load("popup-tanggal.php");
+  $("#popup-alamat").load("popup-alamat.php");
+  $("#popup-ucapan").load("popup-ucapan.php");
 
-  $("#header-page").load("header-page.html");
+  $("#header-page").load("header-page.php");
 
   $("#mobile_wrap").on("click", ".open-panel", function () {
     var panelPosition = $(this).data("panel");

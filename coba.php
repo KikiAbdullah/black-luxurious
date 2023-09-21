@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="images/icons/Ucapan_icon_gold.png" class="logo-ucapan" />
+                    <img src="https://raw.githubusercontent.com/KikiAbdullah/repo-asset-stevie-fahmi/main/icons/Ucapan_icon_gold.png" class="logo-ucapan" />
 
                     <p class="text-ucapan">Ucapan dan Do'a</p>
                 </div>
@@ -70,10 +70,10 @@
         <a href="#" class="close-popup close-popup--x" data-popup=".popup-ucapan"></a>
     </div>
 
-    <img src="images/ornament/Left Top Corner Ornament (SVG).svg" class="ornament-top-left" alt="" />
-    <img src="images/ornament/Right Top Corner Ornament (SVG).svg" class="ornament-top-right" alt="" />
-    <img src="images/ornament/Left Bottom Corner Ornament (SVG).svg" class="ornament-bottom-left" alt="" />
-    <img src="images/ornament/Right Bottom Corner Ornament (SVG).svg" class="ornament-bottom-right" alt="" />
+    <img src="https://raw.githubusercontent.com/KikiAbdullah/repo-asset-stevie-fahmi/main/ornament/Left Top Corner Ornament (SVG).svg" class="ornament-top-left" alt="" />
+    <img src="https://raw.githubusercontent.com/KikiAbdullah/repo-asset-stevie-fahmi/main/ornament/Right Top Corner Ornament (SVG).svg" class="ornament-top-right" alt="" />
+    <img src="https://raw.githubusercontent.com/KikiAbdullah/repo-asset-stevie-fahmi/main/ornament/Left Bottom Corner Ornament (SVG).svg" class="ornament-bottom-left" alt="" />
+    <img src="https://raw.githubusercontent.com/KikiAbdullah/repo-asset-stevie-fahmi/main/ornament/Right Bottom Corner Ornament (SVG).svg" class="ornament-bottom-right" alt="" />
 </div>
 
 
